@@ -1,6 +1,3 @@
-//Implement a function eqArrays which takes in two arrays and returns true or false, based on a perfect match.
-
-// recursive function to check if two objects are equal
 const eqArrays = (arr1, arr2) => {
   // base case
   if (arr1.length !== arr2.length) {
