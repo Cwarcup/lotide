@@ -13,6 +13,7 @@ const takeUntil = require('./takeUntil');
 const without = require('./without');
 const calculateDayInYear = require('./calculateDayInYear');
 const flatten = require('./flatten');
+const join = require('./join');
 
 module.exports = {
   head,
@@ -29,5 +30,6 @@ module.exports = {
   takeUntil,
   without,
   calculateDayInYear,
-  flatten
+  flatten,
+  join
 };
