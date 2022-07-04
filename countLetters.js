@@ -1,5 +1,4 @@
-
-//return a count of each of the letters in that sentence.
+// return an object with the letter as the key and the count as the value.
 const countLetters = (str) => {
   if (str.length === 0) return {};
   const result = {};
@@ -13,8 +12,5 @@ const countLetters = (str) => {
   }
   return result;
 };
-
-// console.log(countLetters('app')['a']);
-console.log(countLetters(''));
 
 module.exports = countLetters;

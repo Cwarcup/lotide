@@ -1,30 +1,3 @@
-// eqArrays which takes in two arrays and returns true or false, based on a perfect match.
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-//  assertArraysEqual which will take in two arrays and console.log an appropriate message to the console.
-const assertArraysEqual = (actual, expected) => {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅ Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`❌ Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-};
-
-// Implement without which will return a subset of a given array, removing unwanted elements.
-// This function should take in a source array and a itemsToRemove array. It should return a new array with only those elements from source that are not present in the itemsToRemove array.
-// without([1, 2, 3], [1]) // => [2, 3]
-// without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
-
 const without = (arr, itemsToRemove) => {
   // empty array to store chars that pass condition
   let result = [];
@@ -41,6 +14,8 @@ const without = (arr, itemsToRemove) => {
   }
   return result;
 };
+
+module.exports = without;
 
 // Test cases
 // const withoutResult = without(['1', '2', '3'], [1, 2, '3'])

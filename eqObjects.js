@@ -1,17 +1,7 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays.js');
 
 // recursive function to check if two objects are equal
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   //get arr of keys for each object
   const keysObj1 = Object.keys(object1);
   const keysObj2 = Object.keys(object2);
@@ -42,3 +32,5 @@ const eqObjects = function (object1, object2) {
     return true;
   }
 };
+
+module.exports = eqObjects;

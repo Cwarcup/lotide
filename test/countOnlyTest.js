@@ -1,26 +1,26 @@
-const countLetters = require('../countLetters');
+const countOnly = require('../countOnly');
 const chai = require('chai');
 const assert = chai.assert;
 
-describe("#countLetters", () => {
+describe("#countOnly", () => {
   it(`returns {} when empty string is passed`, () => {
     const expected = {};
-    const input = countLetters('');
+    const input = countOnly('');
     assert.deepEqual(input, expected);
   });
   it(`returns {a: 1} for 'a'`, () => {
     const expected = {a: 1};
-    const input = countLetters('a');
+    const input = countOnly('a');
     assert.deepEqual(input, expected);
   });
   it(`returns {a: 2} for 'aa'`, () => {
     const expected = {a: 2};
-    const input = countLetters('aa');
+    const input = countOnly('aa');
     assert.deepEqual(input, expected);
   });
   it(`returns {a: 1, b: 2, c: 2, d: 1} for 'dabcbc'`, () => {
     const expected = {a: 1, b: 2, c: 2, d: 1};
-    const input = countLetters('dabcbc');
+    const input = countOnly('dabcbc');
     assert.deepEqual(input, expected);
   });
 });
