@@ -1,13 +1,7 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-//return a count of each of the letters in that sentence.
 
+//return a count of each of the letters in that sentence.
 const countLetters = (str) => {
+  if (str.length === 0) return {};
   const result = {};
   // using regex to filter only letters
   for (let char of str.toLowerCase().match(/[a-z]/g)) {
@@ -20,5 +14,7 @@ const countLetters = (str) => {
   return result;
 };
 
-assertEqual(countLetters('app')['a'], 1);
-assertEqual(countLetters('app')['p'], 2);
+// console.log(countLetters('app')['a']);
+console.log(countLetters(''));
+
+module.exports = countLetters;
