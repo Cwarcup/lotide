@@ -16,12 +16,3 @@ const without = (arr, itemsToRemove) => {
 };
 
 module.exports = without;
-
-// Test cases
-// const withoutResult = without(['1', '2', '3'], [1, 2, '3'])
-// assertArraysEqual(withoutResult, ["1", "2"]); // ✅ Assertion Passed: [1,2] === [1,2]
-
-// const words = ['hello', 'world', 'lighthouse'];
-// const result = without(words, ['lighthouse']); // no need to capture return value for this test case
-// // Make sure the original array was not altered by the without function
-// assertArraysEqual(words, ['hello', 'world', 'lighthouse']);
