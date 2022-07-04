@@ -1,16 +1,6 @@
-// Implement assertArraysEqual which will take in two arrays and console.log an appropriate message to the console.
+const eqArrays = require('./eqArrays');
 
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// Implement assertArraysEqual which will take in two arrays and console.log an appropriate message to the console.
 
 const assertArraysEqual = (actual, expected) => {
   if (eqArrays(actual, expected)) {
@@ -20,3 +10,4 @@ const assertArraysEqual = (actual, expected) => {
   }
 };
 
+module.exports = assertArraysEqual;
