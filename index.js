@@ -11,6 +11,8 @@ const letterPosition = require('./letterPosition');
 const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
+const calculateDayInYear = require('./calculateDayInYear');
+const flatten = require('./flatten');
 
 module.exports = {
   head,
@@ -25,5 +27,7 @@ module.exports = {
   letterPosition,
   map,
   takeUntil,
-  without
+  without,
+  calculateDayInYear,
+  flatten
 };
