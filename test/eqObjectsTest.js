@@ -9,9 +9,6 @@ describe('#eqObjects', () => {
   it('returns false when given two objects with different keys', () => {
     assert.equal(eqObjects({ a: 1, b: 2 }, { a: 1, c: 2 }), false);
   });
-  it('returns false when given two objects with different values', () => {
-    assert.equal(eqObjects({ a: 1, b: 2 }, { a: 1, b: 3 }), false);
-  });
   it('returns true when given a value that is an array', () => {
     const cd = { c: "1", d: ["2", 3] };
     const dc = { d: ["2", 3], c: "1" };
