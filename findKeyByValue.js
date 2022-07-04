@@ -1,11 +1,8 @@
 const findKeyByValue = (object, value) => {
   const objKeysArr = Object.keys(object);
-  console.log(objKeysArr);
 
   for (let key of objKeysArr) {
-    console.log(key);
     if (value === object[key]) {
-      console.log(key);
       return key;
     }
   }
