@@ -11,6 +11,8 @@ const tail = function(array) {
   return array.slice(1);
 };
 
+module.exports = tail;
+
 
 // test cases
 // const result = tail(["Hello", "Lighthouse", "Labs"]);
