@@ -1,8 +1,10 @@
 {
-  "name": "lotide",
+  "name": "@cwarcup/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "This is a project for Lighthouse Labs, completed by Curtis Warcup",
+  "email": "curtis.gwarcup@gmail.com",
+  "author": "Curtis Warcup",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,8 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/Cwarcup/lotide.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["lotide", "lighthouse", "lighthouse-labs", "cwarcup"],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Cwarcup/lotide/issues"
