@@ -14,6 +14,7 @@ const without = require('./without');
 const calculateDayInYear = require('./calculateDayInYear');
 const flatten = require('./flatten');
 const join = require('./join');
+const palindrome = require('./palindrome');
 
 module.exports = {
   head,
@@ -31,5 +32,6 @@ module.exports = {
   without,
   calculateDayInYear,
   flatten,
-  join
+  join,
+  palindrome
 };
