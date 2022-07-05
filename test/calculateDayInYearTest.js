@@ -14,6 +14,4 @@ describe("#calculateDayInYear", () => {
     const input = calculateDayInYear('2000/3/2');
     assert.strictEqual(input, expected);
   });
-
-
 });

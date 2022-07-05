@@ -16,6 +16,8 @@ const flatten = require('./flatten');
 const join = require('./join');
 const palindrome = require('./palindrome');
 const pigLatin = require('./pigLatin');
+const conditionalSum = require('./conditionalSum');
+const anagram = require('./anagram');
 
 module.exports = {
   head,
@@ -35,5 +37,7 @@ module.exports = {
   flatten,
   join,
   palindrome,
-  pigLatin
+  pigLatin,
+  conditionalSum,
+  anagram
 };

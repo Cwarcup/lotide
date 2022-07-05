@@ -26,9 +26,6 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-- `assertArraysEqual`: Compares two arrays and returns `true` if they are equal. Returns `false` otherwise.
-- `assertEqual`: Compares two values and returns `true` if they are equal. Returns `false` otherwise.
-- `assertObjectsEqual`: Compares two objects and returns `true` if they are equal. Returns `false` otherwise.
 - `calculateDayInYear`: Calculates the day of the year for a particular date string. Words on leap years. 
 - `countLetters`: Takes in a sentence(string) and returns a count of each letters in the sentence.
 - `countOnly`: Returns an object with a count of each element in the input array.
