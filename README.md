@@ -26,7 +26,9 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
+- `anagram`: Returns true if the two strings are anagrams of each other.
 - `calculateDayInYear`: Calculates the day of the year for a particular date string. Words on leap years. 
+- `conditionalSum`: Returns the sum of the numbers in the array if the condition is true. Conditions can either be 'even' or 'odd'.
 - `countLetters`: Takes in a sentence(string) and returns a count of each letters in the sentence.
 - `countOnly`: Returns an object with a count of each element in the input array.
 - `eqArrays`: Compares two arrays and returns `true` if they are equal. Returns `false` otherwise.
