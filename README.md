@@ -1,51 +1,49 @@
-# lotide
+# Lotide
 
+A mini clone of the [Lodash](https://lodash.com) library.
 
-## `_.countLetters`
-- Input: `string`
-- Return: An `object` with the **letter** as the key and the **count** as the value.
+## Purpose
 
-Syntax:
-```js
-_.countLetters(string);
-```
+**_BEWARE:_ This library was published for learning purposes. It is _not_ intended for use in production-grade software.**
 
-Example:
-```js
-const countLetters = _.countLetters('lighthouse in the house');
-console.log(countLetters); 
-// { l: 3, i: 2, g: 1, h: 2, t: 1, o: 1, u: 1, s: 1, e: 1, n: 1 }
-```
+This project was created and published by me as part of my learnings at Lighthouse Labs. 
 
-## `_.countOnly`
+## Usage
 
-- Inputs: 
-  - `allItemsArray` = `array` of `strings`. 
-  - `itemsToCountArray` = `object` with keys that are `strings` and values that are `boolean`.
-- Return: An `object` with the **items to be counted** as the key and the **count** as the value.
+**Install it:**
 
-Synxtax:
-```js
-_.countOnly(allItemsArray, itemsToCountArray);
-```
+`npm install @cwarcup/lotide`
 
-Example:
-```js
-const firstNames = [
-  'Karl',
-  'Salima',
-  'Agouhanna',
-  'Fang',
-  'Kavith',
-  'Jason',
-  'Salima',
-  'Fang',
-  'Joe',
-];
+**Require it:**
 
-const namesToCount = {Jason: true, Karima: true, Fang: true, Agouhanna: false};
+`const _ = require('@cwarcup/lotide');`
 
-result = countOnly(firstNames, namesToCount);
+**Call it:**
 
-console.log(result); // {Jason: 1, Fang: 2, Karima: 1}
-```
+`const results = _.tail([1, 2, 3]) // => [2, 3]`
+
+## Documentation
+
+The following functions are currently implemented:
+
+- `assertArraysEqual`: Compares two arrays and returns `true` if they are equal. Returns `false` otherwise.
+- `assertEqual`: Compares two values and returns `true` if they are equal. Returns `false` otherwise.
+- `assertObjectsEqual`: Compares two objects and returns `true` if they are equal. Returns `false` otherwise.
+- `calculateDayInYear`: Calculates the day of the year for a particular date string. Words on leap years. 
+- `countLetters`: Takes in a sentence(string) and returns a count of each letters in the sentence.
+- `countOnly`: Returns an object with a count of each element in the input array.
+- `eqArrays`: Compares two arrays and returns `true` if they are equal. Returns `false` otherwise.
+- `eqObjects`: Compares two objects and returns `true` if they are equal. Returns `false` otherwise.
+- `findKey`: Returns the first key for which the callback returns a truthy value in an object.
+- `findKeyByValue`: Returns the first key that matches a given value in an object.
+- `flatten`: Nested arrays will be flattened into a single array.
+- `head`: Returns the first element of an array.
+- `join`: Joins all elements of an array into a string.
+- `letterPositions`: Takes in a sentence(string) and returns an object with each letter as a key and the index of the letter in the sentence as the value.
+- `map`: Takes in an array and a callback and returns a new array with the results of the callback applied to each element.
+- `middle`: Returns the middle number in an array. If no middle element is present, returns the average of the two middle elements. Only works on arrays of integers.
+- `palindrome`: Returns `true` if the input string is a palindrome. Returns `false` otherwise. Works on strings containing capitals, lower cases, and spaces.
+- `pigLatin`: Takes in a string and returns a Pig Latin version of the string. Rules of Pig Latin [here](https://web.ics.purdue.edu/~morelanj/RAO/prepare2.html).
+- `tail` : Returns the last element of an array.
+- `takeUntil`: Takes in an array and a callback and returns an array with the elements of the array until the callback returns a truthy value.
+- `without`: Takes in an array and a value and returns an array with all the elements that do not match the value.
