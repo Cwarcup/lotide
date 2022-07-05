@@ -29,6 +29,4 @@ const pigLatin = (str) => {
   return result.trim();
 };
 
-console.log(pigLatin('hello'));
-
 module.exports = pigLatin;
